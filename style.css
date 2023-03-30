@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+img,
+video,
+svg {
+    max-width: 100%;
+}
+
+.videoafspiller{
+    margin:0;
+    padding:1em 1em 1em 15em;
+    align-items: center;
+    background-color: rgb(255, 234, 0);
+}
+figure{
+    display: flex;
+    align-content: center;
+}
+#range{
+    width: 77%;
+}
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em;
+    background-color: #16a800;
+    width: 100%;
+    max-width: 100%;
+}
+
+.top-header img {
+    height: 12em;
+    z-index: 1;
+}
+
+h3 {
+    margin-top: 0.5em;
+    margin-bottom: 0.1em;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    padding: 15px;
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #16a800;
+    position: absolute;
+    top: 5em;
+    height: 11em;
+    align-items: end;
+    
+}
+
+.menu a{
+    text-decoration: none;
+    color: rgb(227, 0, 11);
+    font-size: 35px;
+    max-width: 100%;
+}
+
+
+
+.menu a:hover {
+    color: rgb(159, 0, 0);
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgb(255, 234, 0);
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0 15px rgba(0, 0, 0, 0.8);
+    padding: 0em 1em 0em 1em;
+}
+
+.aside-right .billede-beskrivelse{
+    display: flex;
+    padding-left: 10px;
+    font-size: 17px;
+    padding-bottom: 20px;
+    font-size: 22px;
+    font-weight: 550;
+}
+
+.gallery-link {
+    display: flex;
+    padding-bottom: 1.2em;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+.gallery-link img {
+    display: flex;
+    width: 40%;
+    max-width: 750px;
+    height: auto;
+
+}
+
+video {
+    padding: 3em;
+    width: 100%;
+}
+
+.videotekst {
+    padding: 5% 5%;
+}
+
+#gallery-link-big {
+    max-width: 750px;
+    width: 100%;
+    height: 80%;
+    padding-top: 3.5em;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    padding-right: 3em;
+    max-width: 50%;
+    padding-bottom: 5%;
+
+}
+
+.aside-right h2 {
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 0.5em;
+}
+
+.aside-right {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 64, 176);
+    max-width: 45%;
+    padding: 30px;
+    margin: 3.5em 0;
+}
+
+.burger {
+    display: none;
+}
+
+.bottom-footer {
+    display: flex;
+    align-self: flex-end;
+    background-color: #16a800;
+    height: 75px;
+    align-items: center;
+    justify-content: space-around;
+    height: 8em;
+    box-shadow: 0px 0 15px rgba(0, 0, 0, 0.8);
+}
+
+.icons {
+    display: flex;
+    gap: 2rem;
+}
+
+.icons a{
+    color: rgb(227, 0, 11);
+}
+
+.icons a:hover {
+    color: rgb(159, 0, 0);
+}
+
+
+.hemmelig{
+    display: none;
+}
+
+/* css til mindre skærme */
+@media screen and (max-width:830px) {
+
+    .top-header {
+        display: flex;
+        padding: 2em;
+        background-color: #16a800;
+        max-width: 100%;
+        flex-flow: column wrap; 
+    }
+
+    .top-header img {
+        height: 10em;
+    }
+
+    .top-nav {
+        display: flex;
+        align-items: right;
+        justify-content: end;
+        background-color: #16a800;
+    }
+    .videoafspiller{
+        margin:0;
+        padding:1em;
+        align-items: center;
+        background-color: rgb(255, 234, 0);
+    }
+
+    #range{
+        width: 100%;
+    }
+    .menu {
+        
+        display: none;
+        position: absolute;
+        width: 100vw;
+        gap: 5px;
+        padding: 5px 13px;
+    }
+
+    .menu a {
+        font-size: 20px;
+        color: rgb(227, 0, 11);
+        font-size: 2em;
+        }
+
+    .menu.visible {
+        display: flex;
+        align-items: end;
+        justify-content: start;   
+        flex-flow: column wrap;
+        height: 10em;
+    }
+
+    .burger {
+        display: inline-block;
+        text-decoration: none;
+        border: none;
+        background-color: #16a800;
+        font-size: large;
+        padding-right: 2em;
+        padding-top: 1em;
+    }
+
+    .top-nav li {
+        display: block;
+        padding: 0.3125em;
+    }
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .gallery {
+        display: block;
+        padding: 0em 5% 5% 5%;
+       max-width: 100%;
+    }
+
+    .gallery-link {
+        max-height: fit-content;
+        overflow: initial;
+        display: block;
+        margin-bottom: 1.25em;
+    }
+
+    .gallery-link img {
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+
+    .aside-right {
+        max-width: 95%;
+    }
+
+    .bottom-footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+        height: 15%;
+    }
+
+    .icons {
+        display: flex;
+        gap: 1rem;
+    }
+
+   
+}
+
+
+
+
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legomanden Bob</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="menu.js" defer></script>
+    <script src="bigimg.js" defer></script>
+    <script src="tabs.js" defer></script>
+    <script src="turn.js" defer></script>
+    <script src="https://kit.fontawesome.com/6e3c2bd839.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="frontpage">
+
+    <nav class="top-nav">
+        <button class="burger" id="burger"><i class="fa-solid fa-bars"></i></button>
+
+    </nav>
+    <menu class="menu">
+
+        <li>
+            <a href="about.html" class="menu-item">Om filmen</a>
+        </li>
+    </menu>
+
+    <header class="top-header">
+        <img src="images/LEGO-Logo.png" alt="Logo her" class="logo">
+    </header>
+
+
+
+    <main class="content">
+
+
+
+        <article class="videotekst">
+            <h3>Video</h3>
+            <p>Her er vores legofilm. Vores præmis er: selvom folk (i dette tilfælde skoven) er imod dig, så
+                lad vær' med at gi' op på dine drømme!
+                Vores film handler om Bob, der er på tur ude i skov med hans gulddepche.
+                Bob troede bare han skulle ud på en normal gåtur, men fandt hurtigt ud af at skoven ville noget andet!
+                På hans tur oplever han flere udfordringer, bl.a. falder han ned i et hul midt på stien, og
+                bliver nødt til at hoppe op igen. Det er ikke nemt for en legomand at hoppe, så det krævede et par
+                forsøg. Da han får rystet oplevelsen med hullet af sig, går der ikke mange minutter før han kommer ud
+                for en ny
+                udfordring. Skoven får nemlig sendt en hel bistade med mange tusinde bier efter Bob.
+                Bob løber væk og ender for enden af stien foran en kæmpe sten. Han kan se at stenen har et indhak, hvor
+                hans gulddepche passer perfekt ind, så han sætter den ind og....
+            </p>
+
+        </article>
+        <video src="images/legomovie.mp4" id="gallery-link-big" alt="video" controls="controls"
+            onclick="this.play()"></video>
+    </main>
+    <div class="videoafspiller">
+        <figure>
+            <!-- Første billede i sekvensen  -->
+            <img src="images/Lego_turntable/Legomand0001.jpg" alt="" id="turn-img">
+        </figure>
+        <div class="buttons">
+            <!-- Value Sætter den så den er 1 fra starten  -->
+            <input type="range" name="range" id="range" min="01" max="51" value="1">
+        </div>
+        <div id="billede-tekst">
+            <h3>Bob</h3>
+            <p>Her er vores hovedperson: Legomanden Bob!
+                Vores legomand Bob er designet efter farverne fra filmen Jumanji.
+                Vi har taget udgangspunkt i deres 'safari look', som vi synes
+                passer godt ind i vores univers.
+            </p>
+        </div>
+    </div>
+
+
+
+    <footer class="bottom-footer">
+        <section class="icons">
+            <h2>Følg vores projekter!</h2>
+            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube fa-2x"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter fa-2x"></i></a>
+        </section>
+        <section class="adresse">
+            <h2>Adresse</h2>
+            <address>Pulsen 8, 4000 Roskilde</address>
+        </section>
+        <section class="footer-sections">
+            <h2>Juridisk</h2>
+            <p>Dette er et skoleprojekt!</p>
+        </section>
+
+
+
+</body>
+
+</html>
